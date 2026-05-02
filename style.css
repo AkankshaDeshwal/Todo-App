@@ -144,3 +144,9 @@ ul li span:hover{
     background-color: #dedede;
     border-radius: 50%;
 }
+
+@media only screen and (max-width: 600px) {
+    .toDoApp {
+        width:90%;
+    }
+}
