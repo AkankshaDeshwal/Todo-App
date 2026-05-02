@@ -3,15 +3,15 @@
 A clean and responsive Todo App built using JavaScript to manage daily tasks efficiently. This project demonstrates core frontend concepts like DOM manipulation, event handling, and CRUD operations.
 
 🚀 Features
-➕ Add new tasks
-❌ Delete tasks
-✅ Strick off completed tasks
-🎯 Real-time UI updates with JavaScript
+- Add new tasks
+- Delete tasks
+- Strick off completed tasks
+- Real-time UI updates with JavaScript
 
 🛠️ Tech Stack
-HTML5
-CSS3
-JavaScript (Vanilla JS)
+1. HTML5
+2. CSS3
+3. JavaScript (Vanilla JS)
 
 🧠 What I Learned
 Manipulating the DOM dynamically using JavaScript
