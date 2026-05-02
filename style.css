@@ -1,0 +1,146 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width:100%;
+    min-height: 100vh;
+    background: radial-gradient( #1e6bb7, #01236c);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toDoApp {
+    width: 100%;
+    max-width:450px;
+    background-color: #F1F5F9;
+    height:100%;
+    margin-top:20px;
+    padding:40px 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-top:20px;
+    background-color: #dedede;
+    border-radius: 30px;
+    padding-left:20px;
+    width:100%;
+    
+    
+}
+
+.row input {
+   
+    border:none;
+    outline:none;
+    padding:10px;
+    font-size:12px;
+    background-color: transparent;
+}
+
+
+.add_button {
+   
+    padding: 10px;
+    border:none;
+    outline:none;
+    font-size:14px;
+    cursor:pointer;
+    background-color: #04AA6D;
+    color:white;
+    border-radius: 30px;
+    padding: 10px 20px;
+    
+}
+
+.add_button:hover{
+    background-color: #028f5c;
+}
+
+#emptyAlert {
+    font-size:10px;
+}
+
+.tasks {
+    display: flex;
+    width:100%;
+    
+    padding:0px 20px 0px 20px;
+    margin-top:20px;
+}
+
+#taskList {
+    width:100%;
+}
+
+ul li{
+    list-style: none;
+    
+    font-size: 14px;
+    user-select: none;
+    padding: 12px 8px 12px 50px;
+    cursor: pointer;
+    display: block;
+    position: relative;
+}
+
+ul li::before {
+    content:'';
+    position: absolute;
+    height: 23px;
+    width:23px;
+    
+    background-image: url('./images/unchecked_box.png');
+    background-size: cover;
+    background-position: center;
+    top:8px;
+    left:8px;
+}
+
+ul li.checked {
+    color:gray;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    content:'';
+    position: absolute;
+    height: 24px;
+    width:24px;
+    
+    background-image: url('./images/checked_box.png');
+    background-size: cover;
+    background-position: center;
+    top:7px;
+    left:8px;
+}
+
+ul li span {
+    position: absolute;
+    right:0;
+    top:10px;
+    color:gray;
+    
+    width:20px;
+    height:20px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 18px;
+}
+
+ul li span:hover{
+    background-color: #dedede;
+    border-radius: 50%;
+}
